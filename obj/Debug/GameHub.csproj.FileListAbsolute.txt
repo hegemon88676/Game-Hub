@@ -1,0 +1,55 @@
+C:\Users\ff_cr\source\repos\GameHub\bin\Debug\GameHub.exe.config
+C:\Users\ff_cr\source\repos\GameHub\bin\Debug\GameHub.exe
+C:\Users\ff_cr\source\repos\GameHub\bin\Debug\GameHub.pdb
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.csprojAssemblyReference.cache
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\Hub.g.cs
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\MainWindow.g.cs
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\App.g.cs
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub_MarkupCompile.cache
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub_MarkupCompile.lref
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\Hub.baml
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\MainWindow.baml
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.g.resources
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.Properties.Resources.resources
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.csproj.GenerateResource.cache
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.csproj.CoreCompileInputs.cache
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.exe
+C:\Users\ff_cr\source\repos\GameHub\obj\Debug\GameHub.pdb
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.exe.config
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.exe
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.pdb
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csprojAssemblyReference.cache
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Chess.g.cs
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Hub.g.cs
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\MainWindow.g.cs
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\App.g.cs
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub_MarkupCompile.cache
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub_MarkupCompile.lref
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Chess.baml
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Hub.baml
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\MainWindow.baml
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.g.resources
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.Properties.Resources.resources
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csproj.GenerateResource.cache
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csproj.CoreCompileInputs.cache
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.exe
+C:\Users\ff_cr\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.pdb
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.exe.config
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.exe
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\bin\Debug\GameHub.pdb
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csprojAssemblyReference.cache
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Chess.g.cs
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Hub.g.cs
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\MainWindow.g.cs
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\App.g.cs
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub_MarkupCompile.cache
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub_MarkupCompile.lref
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Chess.baml
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\Hub.baml
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\MainWindow.baml
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.g.resources
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.Properties.Resources.resources
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csproj.GenerateResource.cache
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.exe
+C:\Users\LENOVO\Google Drive\Facultate\Anul II\Sem II\MDS\Proiect\GameHub\obj\Debug\GameHub.pdb
