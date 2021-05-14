@@ -23,6 +23,11 @@ namespace GameHub
         public Chess()
         {
             InitializeComponent();
+            DoStuff();
+        }
+
+        private void DoStuff()
+        {
         }
     }
 }

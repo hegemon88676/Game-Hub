@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="GameHub.TicTacToe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameHub"
+             mc:Ignorable="d" 
+             Background="Chocolate"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Name="gridPlayerScores">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Label Content="Waiting after:" FontSize="16" FontWeight="DemiBold"/>
+                <Label Name="labelCurrentPlayer" Content="player 1." FontSize="16" FontWeight="DemiBold"/>
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Player 1:" Name="labelPlayer1" FontSize="20"/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Label Content="Score:" FontSize="16"/>
+                    <Label Content="0" Name="labelScorePlayer1" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <Label Content="Playing as:" FontSize="16"/>
+                    <Label Content="0" FontSize="16"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Player 2:" Name="labelPlayer2" FontSize="20"/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Label Content="Score:" FontSize="16"/>
+                    <Label Content="0" Name="labelScorePlayer2" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <Label Content="Playing as:" FontSize="16"/>
+                    <Label Content="X" FontSize="16"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Border BorderBrush="Black" BorderThickness="2" Grid.Column="1" Margin="25">
+            <Grid Name="gridTTT">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="0" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="1" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="2" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="0" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="0" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="1" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="2" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="1" BorderThickness="2"/>
+                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="2" BorderThickness="2"/>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" x:Name="btnNewGame" Click="btnNewGame_Click" Content="New Game" Height="50" Margin="0, 0, 50, 0"/>
+            <Button Grid.Row="1" x:Name="btnBack" Click="btnBack_Click" Content="Main Menu" Height="50" Margin="0, 0, 50, 0"/>
+        </Grid>
+    </Grid>
+</UserControl>

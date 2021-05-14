@@ -36,5 +36,11 @@ namespace GameHub
             Window parentwin = Window.GetWindow(this);
             parentwin.Close();
         }
+
+        private void btnTTT_Click(object sender, RoutedEventArgs e)
+        {
+            TicTacToe ttt = new TicTacToe();
+            Content = ttt;
+        }
     }
 }
