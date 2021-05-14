@@ -9,7 +9,7 @@
       >
     <DockPanel>
         <!-- Ranks -->
-        <Grid DockPanel.Dock="Left" x:Name="Lines" Width="50" Height="400">
+        <Grid DockPanel.Dock="Left" x:Name="Lines">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -35,7 +35,7 @@
             <TextBlock Grid.Row="8" Grid.Column="0" Text="1"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
         </Grid>
         <!-- Files -->
-        <Grid x:Name="Files" DockPanel.Dock="Top" Height="50" Width="400">
+        <Grid x:Name="Files" DockPanel.Dock="Top">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
@@ -58,7 +58,7 @@
             <TextBlock Grid.Row="0" Grid.Column="6" Text="g" TextAlignment="Center" Foreground="Yellow"></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="7" Text="h" TextAlignment="Center" Foreground="Yellow"></TextBlock>
         </Grid>
-        <Grid x:Name="Table" Width="400" Height="400"  >
+        <Grid x:Name="Table" Width="320" Height="320"   >
             <Grid.Background>
                 <ImageBrush ImageSource="Images/NewChessTable.png"></ImageBrush>
             </Grid.Background>
@@ -85,7 +85,41 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <!--Black pieces-->
+            <Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="0"></Image>
+            <Image Source="Images/BlackKnight.png" Grid.Row="0" Grid.Column="1"></Image>
+            <Image Source="Images/BlackBishop.png" Grid.Row="0" Grid.Column="2"></Image>
+            <Image Source="Images/BlackQueen.png" Grid.Row="0" Grid.Column="3"></Image>
+            <Image Source="Images/BlackKing.png" Grid.Row="0" Grid.Column="4"></Image>
+            <Image Source="Images/BlackBishop.png" Grid.Row="0" Grid.Column="5"></Image>
+            <Image Source="Images/BlackKnight.png" Grid.Row="0" Grid.Column="6"></Image>
+            <Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="7"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="0"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="1"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="2"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="3"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="4"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="5"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="6"></Image>
+            <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="7"></Image>
+
+            <Image Source="Images/WhiteRook.png" Grid.Row="7" Grid.Column="0"></Image>
+            <Image Source="Images/WhiteKnight.png" Grid.Row="7" Grid.Column="1"></Image>
+            <Image Source="Images/WhiteBishop.png" Grid.Row="7" Grid.Column="2"></Image>
+            <Button Click="Button_Click"></Button>
+            <Image Source="Images/WhiteQueen.png" Grid.Row="7" Grid.Column="3"></Image>
+            <Image Source="Images/WhiteKing.png" Grid.Row="7" Grid.Column="4"></Image>
+            <Image Source="Images/WhiteBishop.png" Grid.Row="7" Grid.Column="5"></Image>
+            <Image Source="Images/WhiteKnight.png" Grid.Row="7" Grid.Column="6"></Image>
+            <Image Source="Images/WhiteRook.png" Grid.Row="7" Grid.Column="7"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="0"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="1"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="2"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="3"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="4"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="5"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="6"></Image>
+            <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="7"></Image>
+            <!--Black pieces--><!--
             <TextBlock Grid.Row="0" Grid.Column="0" Text="BR"  TextAlignment="Center" Foreground="Black"></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="1" Text="BN"  TextAlignment="Center" Foreground="Black"></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="2" Text="BB"  TextAlignment="Center" Foreground="Black"></TextBlock>
@@ -103,7 +137,7 @@
             <TextBlock Grid.Row="1" Grid.Column="6" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="7" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
 
-            <!--White pieces-->
+            --><!--White pieces--><!--
             <TextBlock Grid.Row="7" Grid.Column="0" Text="WR"  TextAlignment="Center" Foreground="White"></TextBlock>
             <TextBlock Grid.Row="7" Grid.Column="1" Text="WN"  TextAlignment="Center" Foreground="White"></TextBlock>
             <TextBlock Grid.Row="7" Grid.Column="2" Text="WB"  TextAlignment="Center" Foreground="White"></TextBlock>
@@ -119,7 +153,7 @@
             <TextBlock Grid.Row="6" Grid.Column="4" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
             <TextBlock Grid.Row="6" Grid.Column="5" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
             <TextBlock Grid.Row="6" Grid.Column="6" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="7" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="7" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>-->
 
 
         </Grid>
