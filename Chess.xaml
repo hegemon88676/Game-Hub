@@ -29,104 +29,98 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="1" Grid.Column="1" Text="8"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="2" Grid.Column="6" Text="7"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="3" Grid.Column="5" Text="6"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="4" Grid.Column="4" Text="5"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="5" Grid.Column="3" Text="4"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="2" Text="3"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="1" Text="2"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="8" Grid.Column="0" Text="1"  TextAlignment="Center" Foreground="Yellow"></TextBlock>
-        </Grid>
-        <!-- Files -->
-        <Grid x:Name="Files" DockPanel.Dock="Top" Height="50" Width="400">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="a" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="1" Text="b" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="2" Text="c" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="3" Text="d" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="4" Text="e" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="5" Text="f" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="6" Text="g" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="7" Text="h" TextAlignment="Center" Foreground="Yellow"></TextBlock>
-        </Grid>
-        <Grid x:Name="Table" Width="400" Height="400"  >
-            <Grid.Background>
-                <ImageBrush ImageSource="Images/NewChessTable.png"></ImageBrush>
-            </Grid.Background>
-            <Grid.RowDefinitions>
+                <TextBlock Grid.Row="1" Text="8"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="2" Text="7"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Text="6"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="4" Text="5"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Text="4"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="6" Text="3"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="7" Text="2"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="8" Grid.Column="0" Text="1"  TextAlignment="Center" Foreground="Yellow" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+            <!-- Files -->
+            <Grid x:Name="Files" DockPanel.Dock="Top" Height="50" Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="a" Grid.Column="0" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="b" Grid.Column="1" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="c" Grid.Column="2" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="d" Grid.Column="3" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="e" Grid.Column="4" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="f" Grid.Column="5" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="g" Grid.Column="6" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+                <TextBlock Text="h" Grid.Column="7" Width="50" TextAlignment="Center" Foreground="Yellow" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="gridTable" Width="400" Height="400"  >
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/NewChessTable.png"></ImageBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
 
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
 
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <!--<Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="0"></Image>
+                <Image Source="Images/BlackKnight.png" Grid.Row="0" Grid.Column="1"></Image>
+                <Image Source="Images/BlackBishop.png" Grid.Row="0" Grid.Column="2"></Image>
+                <Image Source="Images/BlackQueen.png" Grid.Row="0" Grid.Column="3"></Image>
+                <Image Source="Images/BlackKing.png" Grid.Row="0" Grid.Column="4"></Image>
+                <Image Source="Images/BlackBishop.png" Grid.Row="0" Grid.Column="5"></Image>
+                <Image Source="Images/BlackKnight.png" Grid.Row="0" Grid.Column="6"></Image>
+                <Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="7"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="0"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="1"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="2"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="3"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="4"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="5"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="6"></Image>
+                <Image Source="Images/BlackPawn.png" Grid.Row="1" Grid.Column="7"></Image>
 
-            <!--Black pieces-->
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="BR"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="1" Text="BN"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="2" Text="BB"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="3" Text="BQ"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="4" Text="BK"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="5" Text="BB"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="6" Text="BN"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Grid.Column="7" Text="BR"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="1" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="2" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="3" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="4" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="5" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="6" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="7" Text="BP"  TextAlignment="Center" Foreground="Black"></TextBlock>
+                <Image Source="Images/WhiteRook.png" Grid.Row="7" Grid.Column="0"></Image>
+                <Image Source="Images/WhiteKnight.png" Grid.Row="7" Grid.Column="1"></Image>
+                <Image Source="Images/WhiteBishop.png" Grid.Row="7" Grid.Column="2"></Image>
+                <Image Source="Images/WhiteQueen.png" Grid.Row="7" Grid.Column="3"></Image>
+                <Image Source="Images/WhiteKing.png" Grid.Row="7" Grid.Column="4"></Image>
+                <Image Source="Images/WhiteBishop.png" Grid.Row="7" Grid.Column="5"></Image>
+                <Image Source="Images/WhiteKnight.png" Grid.Row="7" Grid.Column="6"></Image>
+                <Image Source="Images/WhiteRook.png" Grid.Row="7" Grid.Column="7"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="0"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="1"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="2"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="3"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="4"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="5"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="6"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="7"></Image>-->
 
-            <!--White pieces-->
-            <TextBlock Grid.Row="7" Grid.Column="0" Text="WR"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="1" Text="WN"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="2" Text="WB"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="3" Text="WQ"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="4" Text="WK"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="5" Text="WB"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="6" Text="WN"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="7" Grid.Column="7" Text="WR"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="0" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="1" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="2" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="3" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="4" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="5" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="6" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-            <TextBlock Grid.Row="6" Grid.Column="7" Text="WP"  TextAlignment="Center" Foreground="White"></TextBlock>
-
-
-        </Grid>
-    </DockPanel>
-
+            </Grid>
+        </DockPanel>
+    </Grid>
 </UserControl>
