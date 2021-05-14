@@ -1,2 +1,4 @@
 .vs
 *.ini
+obj
+debug
