@@ -30,5 +30,11 @@ namespace GameHub
             Chess chess = new Chess();
             Content = chess;
         }
+
+        private void btnExit(object sender, RoutedEventArgs e)
+        {
+            Window parentwin = Window.GetWindow(this);
+            parentwin.Close();
+        }
     }
 }
