@@ -21,7 +21,7 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Orientation="Horizontal">
                 <Label Content="Waiting after:" FontSize="16" FontWeight="DemiBold"/>
-                <Label Name="labelCurrentPlayer" Content="player 1." FontSize="16" FontWeight="DemiBold"/>
+                <Label Name="labelCurrentPlayer" Content="?" FontSize="16" FontWeight="DemiBold"/>
             </StackPanel>
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
@@ -36,7 +36,7 @@
                 </StackPanel>
                 <StackPanel Grid.Row="2" Orientation="Horizontal">
                     <Label Content="Playing as:" FontSize="16"/>
-                    <Label Content="0" FontSize="16"/>
+                    <Label Name="labelPlayer1PlayingAs" Content="?" FontSize="16"/>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="2">
@@ -52,34 +52,32 @@
                 </StackPanel>
                 <StackPanel Grid.Row="2" Orientation="Horizontal">
                     <Label Content="Playing as:" FontSize="16"/>
-                    <Label Content="X" FontSize="16"/>
+                    <Label Name="labelPlayer2PlayingAs" Content="?" FontSize="16"/>
                 </StackPanel>
             </Grid>
         </Grid>
 
-        <Border BorderBrush="Black" BorderThickness="2" Grid.Column="1" Margin="25">
-            <Grid Name="gridTTT">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="0" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="1" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="0" Grid.Row="2" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="0" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="0" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="1" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="1" Grid.Row="2" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="1" BorderThickness="2"/>
-                <Border BorderBrush="Black" Grid.Column="2" Grid.Row="2" BorderThickness="2"/>
-            </Grid>
-        </Border>
+        <Grid Name="gridTTT" Grid.Column="1" Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Black" Grid.Column="0" Grid.Row="0" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="0" Grid.Row="1" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="0" Grid.Row="2" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="1" Grid.Row="0" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="2" Grid.Row="0" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="1" Grid.Row="1" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="1" Grid.Row="2" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="2" Grid.Row="1" BorderThickness="2"/>
+            <Border BorderBrush="Black" Grid.Column="2" Grid.Row="2" BorderThickness="2"/>
+        </Grid>
 
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>

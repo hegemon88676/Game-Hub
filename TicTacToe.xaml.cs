@@ -39,11 +39,13 @@ namespace GameHub
                 for(int j = 0; j < 3; ++j)
                 {
                     Button btn = new Button();
-                    btn.Name = "Button" + i + j;
+                    btn.Name = "btn" + i + j;
+                    btn.Height = 134;
+                    btn.Width = 134;
+                    btn.Margin = new Thickness(0);
                     btn.BorderBrush = Brushes.Transparent;
                     btn.BorderThickness = new Thickness(0);
                     btn.Click += new RoutedEventHandler(btnAddXor0);
-
                     Grid.SetRow(btn, i);
                     Grid.SetColumn(btn, j);
                     gridTTT.Children.Add(btn);
@@ -54,8 +56,10 @@ namespace GameHub
         {
             Button btn = sender as Button;
 
-            int i = int.Parse(btn.Name[6].ToString());
-            int j = int.Parse(btn.Name[7].ToString());
+            int i = int.Parse(btn.Name[3].ToString());
+            int j = int.Parse(btn.Name[4].ToString());
+
+            gridTTT.Children.Remove(btn);
 
             if(CurrentlyPlaying == 1)
                 if(StartingWithPlayer1)
@@ -71,15 +75,28 @@ namespace GameHub
                 CurrentlyPlaying++;
             else
                 CurrentlyPlaying--;
+
+            labelCurrentPlayer.Content = "player " + CurrentlyPlaying + ".";
+
         }
         private void AddX(int i, int j)
         {
-            MessageBox.Show("hey");
+            Label labelX = new Label() { Content = "X", Height = 134, Width = 134, FontSize = 75 };
+            labelX.HorizontalContentAlignment = HorizontalAlignment.Center;
+            labelX.VerticalContentAlignment = VerticalAlignment.Center;
+            Grid.SetColumn(labelX, j);
+            Grid.SetRow(labelX, i);
+            gridTTT.Children.Add(labelX);
         }
 
         private void Add0(int i, int j)
         {
-            MessageBox.Show("buna");
+            Label label0 = new Label() { Content = "0", Height = 134, Width = 134, FontSize = 75 };
+            label0.HorizontalContentAlignment = HorizontalAlignment.Center;
+            label0.VerticalContentAlignment = VerticalAlignment.Center;
+            Grid.SetColumn(label0, j);
+            Grid.SetRow(label0, i);
+            gridTTT.Children.Add(label0);
 
         }
 
@@ -107,13 +124,18 @@ namespace GameHub
             {
                 StartingWithPlayer1 = false;
                 CurrentlyPlaying = 2;
+                labelPlayer1PlayingAs.Content = "0";
+                labelPlayer2PlayingAs.Content = "X";
             }
             else
             {
                 StartingWithPlayer1 = true;
                 CurrentlyPlaying = 1;
+                labelPlayer1PlayingAs.Content = "X";
+                labelPlayer2PlayingAs.Content = "0";
             }
 
+            labelCurrentPlayer.Content = "player " + CurrentlyPlaying + ".";
             gridTTT.Children.Clear();
             AddButtons();
             AddBorders();
