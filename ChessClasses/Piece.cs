@@ -14,25 +14,13 @@ namespace GameHub.ChessClasses
     public class Piece
     {
         int currentx, currenty;
-        private static BitmapFrame changeBtnBckg(string imageName)
+        /*private static BitmapFrame changeBtnBckg(string imageName)
         {
             Uri resourceUri = new Uri("Images/" + imageName + ".png", UriKind.Relative);
             StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
-
-            BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);
-            
-            
+            BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);   
             return temp;
-            
-        }
-        public static void addPiece(Grid grid)
-        {
-            Button btnRook = new Button();
-            ImageBrush brush = new ImageBrush(changeBtnBckg("BlackRook"));
-            btnRook.Background = brush;
-            Grid.SetColumn(btnRook, 0);
-            Grid.SetRow(btnRook, 0);
-            grid.Children.Add(btnRook);
-        }
+        }*/
+        
     }
 }
