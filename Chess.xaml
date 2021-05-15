@@ -6,7 +6,17 @@
              xmlns:local="clr-namespace:GameHub"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <!--<UserControl.Resources>
+        <Style x:Key="btnStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>-->
     <Grid Margin="0">
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450"/>
             <ColumnDefinition/>
@@ -86,7 +96,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 
-                <Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="0"></Image>
+                <!--<Image Source="Images/BlackRook.png" Grid.Row="0" Grid.Column="0"></Image>
                 <Image Source="Images/BlackKnight.png" Grid.Row="0" Grid.Column="1"></Image>
                 <Image Source="Images/BlackBishop.png" Grid.Row="0" Grid.Column="2"></Image>
                 <Image Source="Images/BlackQueen.png" Grid.Row="0" Grid.Column="3"></Image>
@@ -118,7 +128,7 @@
                 <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="4"></Image>
                 <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="5"></Image>
                 <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="6"></Image>
-                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="7"></Image>
+                <Image Source="Images/WhitePawn.png" Grid.Row="6" Grid.Column="7"></Image>-->
 
             </Grid>
         </DockPanel>

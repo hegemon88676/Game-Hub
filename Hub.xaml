@@ -7,16 +7,16 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="SteelBlue">
     <UserControl.Resources>
-        <Style TargetType="{x:Type Button}" >
+        <Style x:Key="HubButtonStyle" TargetType="{x:Type Button}" >
             <Setter Property="Background" Value="Orange"/>
             <Setter Property="Margin" Value="0,0,20,0"/>
             <Setter Property="Height" Value="150"/>
             <Setter Property="Width" Value="150"/>
-            <Style.Triggers>
+            <!--<Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="LightGray"/>
                 </Trigger>
-            </Style.Triggers>
+            </Style.Triggers>-->
         </Style>
     </UserControl.Resources>
     <Grid>
@@ -35,9 +35,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnChess" Grid.Column="0" Content="Chess" Click="btnChess_Click" Margin="0" HorizontalAlignment="Right"/>
-                <Button x:Name="btnTTT" Click="btnTTT_Click" Content="Tick &amp; Tack &amp; Toe" Grid.Column="1" Margin="0"/>
-                <Button Content="Button" Margin="0" Grid.Column="2" HorizontalAlignment="Left"/>
+                <Button x:Name="btnChess" Style="{StaticResource HubButtonStyle}" Grid.Column="0" Content="Chess" Click="btnChess_Click" Margin="0" HorizontalAlignment="Right"/>
+                <Button x:Name="btnTTT" Style="{StaticResource HubButtonStyle}" Click="btnTTT_Click" Content="Tick &amp; Tack &amp; Toe" Grid.Column="1" Margin="0"/>
+                <Button Content="Button" Style="{StaticResource HubButtonStyle}" Margin="0" Grid.Column="2" HorizontalAlignment="Left"/>
             </Grid>
 
             <Grid Grid.Row="1" VerticalAlignment="Center">
