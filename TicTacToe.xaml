@@ -16,8 +16,9 @@
         <Grid Grid.Column="0" Name="gridPlayerScores">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="4*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Orientation="Horizontal">
                 <Label Content="Waiting after:" FontSize="16" FontWeight="DemiBold"/>
@@ -55,6 +56,10 @@
                     <Label Name="labelPlayer2PlayingAs" Content="?" FontSize="16"/>
                 </StackPanel>
             </Grid>
+            <StackPanel Grid.Row="3">
+                <Label Content="Number of tied games:" FontSize="15" HorizontalAlignment="Center"/>
+                <Label Content="?" Name="labelNumberofTies" FontSize="15" HorizontalAlignment="Center"/>
+            </StackPanel>
         </Grid>
 
         <Grid Name="gridTTT" Grid.Column="1" Margin="25">

@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Linq;
 
 namespace GameHub
 {
@@ -21,16 +12,21 @@ namespace GameHub
     public partial class TicTacToe : UserControl
     {
         private int CurrentlyPlaying = 2;
+        private static int Player1Wins = 0, Player2Wins = 0, NumberOfTies = 0;
         private bool StartingWithPlayer1 = false;
+        private int[,] arrayTTT = new int[3, 3];
 
         public TicTacToe()
         {
             InitializeComponent();
-
+            DoStuff();
         }
 
         private void DoStuff()
         {
+            GetPlayer1Wins();
+            GetPlayer2Wins();
+            GetTies();
         }
 
         private void AddButtons()
@@ -77,6 +73,31 @@ namespace GameHub
                 CurrentlyPlaying--;
 
             labelCurrentPlayer.Content = "player " + CurrentlyPlaying + ".";
+            arrayTTT[i, j] = CurrentlyPlaying;
+            int check = CheckWinCondition();
+            switch(check)
+            {
+                case -1:
+                    break;
+                case 0:
+                    NumberOfTies++;
+                    labelNumberofTies.Content = NumberOfTies;
+                    MessageBox.Show("Tie!");
+                    break;
+                case 1:
+                    Player1Wins++;
+                    labelScorePlayer1.Content = Player1Wins;
+                    MessageBox.Show("Player 1 wins!");
+                    break;
+                case 2:
+                    Player2Wins++;
+                    labelScorePlayer2.Content = Player2Wins;
+                    MessageBox.Show("Player 2 wins!");
+                    break;
+            }
+            if(check != -1)
+            {
+            }
 
         }
         private void AddX(int i, int j)
@@ -98,6 +119,50 @@ namespace GameHub
             Grid.SetRow(label0, i);
             gridTTT.Children.Add(label0);
 
+        }
+
+        private int CheckWinCondition()
+        {
+            int i, j;
+
+            if(arrayTTT[0, 0] == arrayTTT[0, 1] && arrayTTT[0, 1] == arrayTTT[0, 2])
+                return arrayTTT[0, 0];
+            if(arrayTTT[1, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[1, 2])
+                return arrayTTT[1, 0];
+            if(arrayTTT[2, 0] == arrayTTT[2, 1] && arrayTTT[2, 1] == arrayTTT[2, 2])
+                return arrayTTT[2, 0];
+            if(arrayTTT[0, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 2])
+                return arrayTTT[0, 0];
+            if(arrayTTT[0, 2] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 0])
+                return arrayTTT[0, 2];
+            if(arrayTTT[0, 0] == arrayTTT[1, 0] && arrayTTT[1, 0] == arrayTTT[2, 0])
+                return arrayTTT[0, 0];
+            if(arrayTTT[0, 1] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 1])
+                return arrayTTT[0, 1];
+            if(arrayTTT[0, 2] == arrayTTT[1, 2] && arrayTTT[1, 2] == arrayTTT[2, 2])
+                return arrayTTT[0, 2];
+
+            for(i = 0; i < 3; ++i)
+                for(j = 0; j < 3; ++j)
+                    if(arrayTTT[i, j] == 0)
+                        return -1;
+
+
+            return 0;
+        }
+
+        public static void GetPlayer1Wins()
+        {
+        }
+
+        public static void GetPlayer2Wins()
+        {
+        
+        }
+
+        public static void GetTies()
+        {
+        
         }
 
         private void AddBorders()
@@ -137,8 +202,19 @@ namespace GameHub
 
             labelCurrentPlayer.Content = "player " + CurrentlyPlaying + ".";
             gridTTT.Children.Clear();
+            FillArray(arrayTTT);
             AddButtons();
             AddBorders();
+        }
+        public static void FillArray(int[,] array)
+        {
+            for(int i = 0; i < array.GetLength(0); i++)
+            {
+                for(int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = 0;
+                }
+            }
         }
     }
 }
