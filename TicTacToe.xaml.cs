@@ -125,28 +125,28 @@ namespace GameHub
         {
             int i, j;
 
-            if(arrayTTT[0, 0] == arrayTTT[0, 1] && arrayTTT[0, 1] == arrayTTT[0, 2])
+
+            if(arrayTTT[0, 0] == arrayTTT[0, 1] && arrayTTT[0, 1] == arrayTTT[0, 2] && arrayTTT[0, 0] != 0)
                 return arrayTTT[0, 0];
-            if(arrayTTT[1, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[1, 2])
+            if(arrayTTT[1, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[1, 2] && arrayTTT[1, 0] != 0)
                 return arrayTTT[1, 0];
-            if(arrayTTT[2, 0] == arrayTTT[2, 1] && arrayTTT[2, 1] == arrayTTT[2, 2])
+            if(arrayTTT[2, 0] == arrayTTT[2, 1] && arrayTTT[2, 1] == arrayTTT[2, 2] && arrayTTT[2, 0] != 0)
                 return arrayTTT[2, 0];
-            if(arrayTTT[0, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 2])
+            if(arrayTTT[0, 0] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 2] && arrayTTT[0, 0] != 0)
                 return arrayTTT[0, 0];
-            if(arrayTTT[0, 2] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 0])
+            if(arrayTTT[0, 2] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 0] && arrayTTT[0, 2] != 0)
                 return arrayTTT[0, 2];
-            if(arrayTTT[0, 0] == arrayTTT[1, 0] && arrayTTT[1, 0] == arrayTTT[2, 0])
+            if(arrayTTT[0, 0] == arrayTTT[1, 0] && arrayTTT[1, 0] == arrayTTT[2, 0] && arrayTTT[0, 0] != 0)
                 return arrayTTT[0, 0];
-            if(arrayTTT[0, 1] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 1])
+            if(arrayTTT[0, 1] == arrayTTT[1, 1] && arrayTTT[1, 1] == arrayTTT[2, 1] && arrayTTT[0, 1] != 0)
                 return arrayTTT[0, 1];
-            if(arrayTTT[0, 2] == arrayTTT[1, 2] && arrayTTT[1, 2] == arrayTTT[2, 2])
+            if(arrayTTT[0, 2] == arrayTTT[1, 2] && arrayTTT[1, 2] == arrayTTT[2, 2] && arrayTTT[0, 2] != 0)
                 return arrayTTT[0, 2];
 
             for(i = 0; i < 3; ++i)
                 for(j = 0; j < 3; ++j)
                     if(arrayTTT[i, j] == 0)
                         return -1;
-
 
             return 0;
         }
