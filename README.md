@@ -5,3 +5,5 @@ A simple game hub with your favourite games:
 * Dice party
 * Snakes & Ladders
 * Tic & Tac & Toe
+
+Technology used: WPF.
